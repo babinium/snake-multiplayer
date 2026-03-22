@@ -1,0 +1,15 @@
+{
+  "name": "snake-multiplayer",
+  "version": "1.0.0",
+  "description": "Multiplayer 1v1 Snake game with card abilities",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "csv-parse": "^6.2.1",
+    "express": "^4.18.2",
+    "socket.io": "^4.7.4",
+    "uuid": "^13.0.0"
+  }
+}

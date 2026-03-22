@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Snake Multiplayer 1v1</title>
+  <meta name="description" content="Juego de Snake multijugador 1v1 en tiempo real con sistema de cartas y habilidades.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ───── LOBBY SCREEN ───── -->
+  <div id="lobby-screen" class="screen active">
+    <!-- Icono de Sobres -->
+    <div class="pack-icon-btn" id="btnOpenPack" title="Abrir Sobre Gratis">
+      🎁 <span class="pack-badge">Gratis</span>
+      <div id="packLimitText" style="position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); font-size: 0.75rem; color: #fff; font-weight: bold; white-space: nowrap; text-shadow: 0px 1px 3px black;">0/3</div>
+    </div>
+
+    <div class="lobby-container">
+      <h1 class="lobby-title">🐍 SNAKE</h1>
+      <p class="lobby-subtitle">Multiplayer 1 vs 1 • Elige tus cartas y combate</p>
+
+      <div class="input-group">
+        <label for="playerName">Nombre</label>
+        <input type="text" id="playerName" placeholder="Tu nombre..." maxlength="16" autocomplete="off">
+      </div>
+
+      <div class="card-selector-label">
+        Cartas <span class="card-counter" id="cardCounter">0 / 5</span>
+      </div>
+      <div class="card-tabs">
+        <button class="card-tab active" id="tabAll" data-tab="all">🃏 Todas</button>
+        <button class="card-tab" id="tabFavs" data-tab="favs">♡ Favoritas</button>
+      </div>
+      <div class="card-scroll-area">
+        <div class="card-grid" id="cardGrid">
+          <!-- Cards populated by JS -->
+        </div>
+      </div>
+
+      <button class="btn-primary btn-find-match" id="btnFindMatch">⚔️ Buscar Partida</button>
+    </div>
+  </div>
+
+  <!-- ───── WAITING OVERLAY ───── -->
+  <div class="waiting-overlay" id="waitingOverlay">
+    <div class="spinner"></div>
+    <div class="waiting-text">Buscando oponente...</div>
+  </div>
+
+  <!-- ───── COUNTDOWN OVERLAY ───── -->
+  <div class="countdown-overlay" id="countdownOverlay">
+    <div class="countdown-number" id="countdownNumber">3</div>
+  </div>
+
+  <!-- ───── GAME SCREEN ───── -->
+  <div id="game-screen" class="screen">
+    <!-- HUD Top -->
+    <div class="game-hud-top">
+      <div class="hud-player" id="hudP1">
+        <div class="hud-player-dot" id="hudP1Dot"></div>
+        <span class="hud-player-name" id="hudP1Name">-</span>
+        <span class="hud-player-score" id="hudP1Score">0</span>
+      </div>
+      <div class="hud-timer" id="hudTimer">2:00</div>
+      <div class="hud-player" id="hudP2" style="flex-direction: row-reverse;">
+        <div class="hud-player-dot" id="hudP2Dot"></div>
+        <span class="hud-player-name" id="hudP2Name">-</span>
+        <span class="hud-player-score" id="hudP2Score">0</span>
+      </div>
+    </div>
+
+    <!-- Canvas -->
+    <div class="canvas-wrapper">
+      <canvas id="gameCanvas"></canvas>
+      <!-- D-Pad for mobile -->
+      <div class="dpad-container" id="dpad">
+        <div class="dpad-btn dpad-up" data-dir="up">▲</div>
+        <div class="dpad-btn dpad-left" data-dir="left">◄</div>
+        <div class="dpad-btn dpad-right" data-dir="right">►</div>
+        <div class="dpad-btn dpad-down" data-dir="down">▼</div>
+      </div>
+    </div>
+
+    <!-- Card HUD -->
+    <div class="card-hud" id="cardHud">
+      <!-- Card buttons populated by JS -->
+    </div>
+  </div>
+
+  <!-- ───── RESULT SCREEN ───── -->
+  <div id="result-screen" class="screen">
+    <div class="result-container">
+      <div class="result-label" id="resultLabel">Partida Terminada</div>
+      <div class="result-winner" id="resultWinner">—</div>
+      <div class="result-disconnect-msg" id="resultDisconnect" style="display:none;">El oponente se desconectó</div>
+      <div class="result-scores" id="resultScores"></div>
+      <button class="btn-primary btn-play-again" id="btnPlayAgain">🔄 Jugar de nuevo</button>
+    </div>
+  </div>
+
+  <!-- ───── PACK OPENING OVERLAY ───── -->
+  <div class="pack-overlay" id="packOverlay">
+    <div class="pack-title">¡Nuevo Sobre!</div>
+    <div class="pack-cards" id="packCardsContainer">
+      <!-- Cards injected here -->
+    </div>
+    <button class="btn-primary btn-close-pack" id="btnClosePack">Continuar al Inventario</button>
+  </div>
+
+  <!-- ───── SACRIFICE OVERLAY ───── -->
+  <div class="pack-overlay" id="sacrificeOverlay">
+    <div class="pack-title" style="color: var(--danger); text-shadow: 0 0 15px rgba(255, 62, 142, 0.5);">Carta a Sacrificar</div>
+    <p style="color: white; margin-bottom: 1rem; font-weight: bold; text-align: center;">Elige una carta no favorita para quemar y jugar.</p>
+    <div class="pack-cards" id="sacrificeCardsContainer" style="max-height: 50vh; overflow-y: auto;">
+      <!-- Cards injected here -->
+    </div>
+    <div id="sacrificeEmptyMsg" style="color: var(--text-dim); text-align: center; display: none; margin-bottom: 1rem;">
+      No tenés cartas no-favoritas disponibles.<br>¡Abrí sobres gratis para conseguir más!
+    </div>
+    <button class="btn-primary" id="btnCancelSacrifice" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); max-width: 200px;">Cancelar</button>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

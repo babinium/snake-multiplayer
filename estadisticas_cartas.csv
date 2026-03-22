@@ -1,0 +1,60 @@
+Estadistica Modificada,Nombre de la Carta,Descripcion,Rango de Valor Potencial,Tipo,Tiempo de Reuso,Incremento de Variante
+Velocidad de Movimiento Base,Rayo Veloz,Aumenta permanentemente un [rango] la velocidad de tu serpiente.,[30 - 70]%,Pasiva,-,1%
+Distancia de Teletransporte Lineal,Dash,Te teletransporta [rango] bloques hacia adelante.,[2 - 6] bloques,Activa,10s,1 bloque
+Duracion del Modo Intangible,Modo Espectro,Te vuelves intangible y atraviesas todo durante [rango] segundos.,[2 - 6] segundos,Activa,15s,0.1 segundos
+Duracion del Escudo Protector,Escudo,Recibes un escudo que absorbe un impacto durante [rango] segundos.,[3 - 8] segundos,Activa,20s,0.1 segundos
+Duracion del Aturdimiento/Congelacion,Congelacion,Inmoviliza al enemigo durante [rango] segundos.,[1 - 5] segundos,Activa,25s,0.1 segundos
+Duracion de Controles Invertidos,Veneno,Invierte los controles de movimiento del enemigo durante [rango] segundos.,[2 - 6] segundos,Activa,25s,0.1 segundos
+Tamaño del Muro Generado,Muro,Coloca un muro sólido de [rango] bloques detrás de tu cola.,[2 - 5] bloques,Activa,15s,1 bloque
+Cantidad de Puntos Robados,Robo,Roba [rango] puntos directamente al oponente.,[10 - 25] puntos,Activa,30s,1 punto
+Radio de Atraccion Magnética,Iman,Atrae manzanas cercanas en un radio de [rango] bloques.,[3 - 7] bloques,Pasiva,-,0.5 bloques
+Segmentos Base al Revivir,Piel Gruesa,Comienzas tu próxima vida con [rango] segmentos de cuerpo extras.,[4 - 8] segmentos,Pasiva,-,1 segmento
+Reduccion de Tiempo de Reaparicion,Regeneracion,Reduce el tiempo de reaparición a [rango] segundos tras morir.,[0.2 - 2.0] segundos,Pasiva,-,0.1 segundos
+Limite Maximo de Tamaño,Cola Corta,El tamaño de tu serpiente no superará los [rango] segmentos.,[10 - 20] segmentos,Pasiva,-,1 segmento
+Puntaje por Manzana Recolectada,Multiplicador,Ganas un multiplicador de [rango] puntos extra por manzana.,[+1 - +5] puntos,Pasiva,-,1 punto
+Puntaje Quitado al Rival por Morir,Ultimo Aliento,Resta [rango] puntos al rival al morir.,[5 - 20] puntos,Pasiva,-,1 punto
+Tasa de Crecimiento Adicional,Esteroides,Creces [rango] segmentos adicionales al comer una manzana.,[+1 - +3] segmentos,Pasiva,-,0.1 segmentos
+Reduccion Global de Cooldowns,Reloj Mágico,Reduce el tiempo de recarga de todas tus cartas activas un [rango].,[10% - 30%],Pasiva,-,1%
+Multiplicador Pasivo de Velocidad al Morir Rival,Frenesí Asesino,Aumenta tu velocidad por [rango] segundos cuando el rival muere.,[3 - 8] segundos,Pasiva,-,0.1 segundos
+Blindaje a Robos de Puntos,Bóveda Cerrada,Otorga un [rango] de resistencia contra la carta Robo del enemigo.,[30% - 80%],Pasiva,-,1%
+Tiempo de Invulnerabilidad Post-Revivir,Ángel Guardián,Al reaparecer eres invulnerable a choques durante [rango] segundos.,[1 - 4] segundos,Pasiva,-,0.1 segundos
+Probabilidad de Evasion Frontal,Espejismo,Tienes un [rango] de probabilidad de no chocar al recibir un impacto frontal.,[5% - 15%],Pasiva,-,1%
+Penalización al Rival por Comer,Gula Tóxica,Le quita [rango] puntos al enemigo cada vez que come una manzana.,[1 - 4] puntos,Pasiva,-,0.5 puntos
+Modificador Constante de Velocidad Enemiga,Grilletes,Reduce la velocidad permanente del rival en un [rango].,[5% - 15%],Pasiva,-,1%
+Probabilidad de Generacion Extra Múltiple,Cosecha Abundante,Tienes un [rango] de probabilidad de que la manzana no desaparezca al comerla.,[15% - 40%],Pasiva,-,1%
+Modificador de Tiempo Total de Partida,Manipula-Tiempo,recorta el tiempo de la partida en [rango] segundos.,[10 - 20] segundos,Activa,Una vez por partida,1 segundo
+Rango de Robo Incrementado,Gran Ladrón,La carta Robo te otorga [rango] puntos extra al usarla.,[+5 - +15] puntos,Pasiva,-,1 punto
+Resistencia a Efectos de Control,Piel de Acero,Reduce en un [rango] la duración del veneno y la congelación sobre ti.,[20% - 40%],Pasiva,-,1%
+Multiplicador por Cadena de Combos,Momento Perfecto,Ganas [rango] de recompensa extra tras comer 5 manzanas sin morir.,[+10% - +25%],Pasiva,-,1%
+Robo de Tiempo (Vampirismo de Cooldowns),Cronófago,Al comer una manzana tus cartas se recargan un [rango] más rápido.,[5% - 15%],Pasiva,-,1%
+Tasa de Desintegración Invertida,Dieta Estricta,Si no comes pierdes un segmento de tu cuerpo cada [rango] segundos.,[10 - 25] segundos,Pasiva,-,1 segundo
+Toxicidad de Contacto,Espinas Venenosas,Tienes un [rango] de probabilidad de dejar una manzana venenosa en el mapa al comer.,[10% - 25%],Pasiva,-,1%
+Explosion Criogénica al Morir,Supernova Helada,Al morir congelas a tu oponente si está a un radio de [rango] bloques de ti.,[3 - 7] bloques,Pasiva,-,0.5 bloques
+Duracion Total de Habilidades de Utilidad,Maestría Defensiva,Las cartas Modo Espectro y Escudo duran [rango] segundos más.,[+1 - +3] segundos,Pasiva,-,0.1 segundos
+Tamaño Ampliado de Construcciones,Gran Arquitecto,La carta Muro coloca [rango] bloques extra detrás de ti.,[+1 - +4] bloques,Pasiva,-,1 bloque
+Estabilidad Estructura (Duración Muro),Concreto Reforzado,Tus muros duran [rango] segundos adicionales en el mapa antes de borrarse.,[+5 - +15] segundos,Pasiva,-,1 segundo
+Penalizacion de Tamaño al Enemigo,Obesidad Forzada,Si el enemigo crece 10 segmentos las recargas de sus cartas tardan [rango] segundos adicionales.,[+1 - +2] segundos,Pasiva,-,0.1 segundos
+Atraccion Gravitacional Menor,Micro Gravedad,Atraes pasivamente cualquier manzana que te cruces a menos de [rango] bloques.,[2 - 4] bloques,Pasiva,-,0.5 bloques
+Mecanica de Rebote Elasticidad,Serpiente de Goma,Chocar con los límites del mapa no mata sino que te rebota hacia dentro hasta [rango] veces.,[1 - 3] rebotes,Pasiva,-,1 rebote
+Conservacion de Puntaje al Morir,Seguro de Vida,Al morir retienes y guardas un [rango] del puntaje total que ibas a perder.,[20% - 40%],Pasiva,-,1%
+Probabilidad de Manzanas Doradas,Árbol Sagrado,Genera manzanas especiales que valen el triple de puntos temporalmente durante [rango] segundos.,[5 - 15] segundos,Activa,30s,0.5 segundos
+Aura de Ralentización Cercana,Aura Pesada,Si el enemigo pasa a menos de 3 bloques cerca tuyo su velocidad cae un [rango].,[15% - 30%],Pasiva,-,1%
+Hitbox Reducida (Corteza Fina),Silueta Fina,Achica tu radio del choque un [rango] para poder girar rozando los muros seguro.,[10% - 25%],Pasiva,-,1%
+Reflejo o Escudo Espejo,Espejo Kármico,Tienes un [rango] de probabilidad de rebotarle su congelación o veneno al enemigo si te lo tira.,[15% - 35%],Pasiva,-,1%
+Overdrive Pasivo Progresivo,Aceleración Térmica,Ganas pasivamente un [rango] extra de velocidad por cada 10 segundos que permanezcas vivo.,[2% - 5%],Pasiva,-,0.1%
+Recuperación de Puntos al Matar,Carroñero,Al matar al rival ganas y recuperas un bono del [rango] de los puntos que éste perdió.,[10% - 30%],Pasiva,-,1%
+Bloqueo Radiante de Cooldowns Enemigos,Sabotaje Mágico,Toda recarga del rival tarda permanentemente [rango] segundos adicionales si sigues vivo.,[+1 - +3] segundos,Pasiva,-,0.1 segundos
+Rango Limite Amplificado (Campo Extra),Vagabundo del Vacío,La carta espectro te deja exceder un margen hacia afuera de la pantalla por [rango] casillas más fuera de los bordes.,[2 - 4] cuadros,Pasiva,-,0.5 cuadros
+Regeneración Espontánea de Muros,Albañil Nato,Cada bocado de manzana tiene un [rango] de probabilidad de restaurar una casilla rota de tus muros.,[10% - 25%],Pasiva,-,1%
+Invisibilidad Intermitente,Camuflaje Activo,Te vuelves transparente ante la cámara del rival durante [rango] segundos en repetición continua.,[2 - 5] segundos,Pasiva,-,0.1 segundos
+Ventaja de Remontada (Heroismo),Espíritu Heroico,Si sumas menos puntaje que tu oponente recibes un bono positivo del [rango] por manzana ingerida.,[+20% - +40%],Pasiva,-,1%
+Multiplicador Exponencial de Score Pasivo,Interés Compuesto,Cada 10 segundos que permanezcas vivo ganas pasivamente [rango] puntos extra base.,[+3 - +10] pts,Pasiva,-,1 punto
+Alcance Vertical Dash Incrementado,Gran Salto,Aumenta en [rango] casillas adicionales el alcance recto que salta la destreza Dash al accionarse.,[+1 - +3] losas,Pasiva,-,1 bloque
+Penalizacion Indirecta en Muertes Seguidas,Humillación,Si el enemigo muere 3 veces consecutivas sin morir tú a él se le decuentan pasivos [rango] puntos.,[-15 - -35] pts,Pasiva,-,1 punto
+Vision Parcial del Rival (Niebla),Ceguera Nocturna,Disminuye seriamente limitando la visión del enemigo oscureciendo su pantalla gráfica durante [rango] segundos.,[4 - 10] segundos,Activa,30s,0.1 segundos
+Drenado de Puntaje Pasivo,Sanguijuela,Le robas imperceptible y limpiamente [rango] puntos al score del rival por cada 10 segundos vivo.,[+2 - +6] pts,Pasiva,-,1 punto
+Bonificacion a Frutas Creadas Magia Frutal,Fertilizante,Las manzanas sumadas por cartas tuyas poseen un [rango] de probabilidad base de contar oro y triple puntuación extra.,[10% - 25%],Pasiva,-,1%
+Intercambio Pasivo de Velocidades,Transferencia Cinética,Comer tu bocado cuenta con un [rango] de probabilidad al azar de robar un atributo temporal ajeno de velocidad del enemigo.,[5% - 15%],Pasiva,-,1%
+Proteccion contra Muerte Automatica,Armadura Desgastada,El choque no rompe directamente tu carta protectora si el azar entra en un [rango] vital positivo pasivo sobrante.,[10% - 30%],Pasiva,-,1%
+Aceleracion de Movilidad de Manzanas,Persecución Magnética,Tu velocidad recta y directa aumenta súbitamente un [rango] únicamente cuando apuntas sin viraje frontal a una manzana disponible próxima.,[15% - 30%],Pasiva,-,1%
+Venganza Absoluta,Maldición Post-Mortem,Morir acciona un veneno postumo dañando una manzana elegida al azar para castigar tóxico por [rango] segundos al contacto rival fatal.,[10 - 20] seg,Pasiva,-,1 segundo
